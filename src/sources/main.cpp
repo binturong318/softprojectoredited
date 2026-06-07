@@ -319,6 +319,10 @@ int main(int argc, char *argv[])
     }
     // Database is of correct version
 
+    menuItemClock.Click += (s,e) => {
+    this.CurrentSlide = new ClockSlide();
+};
+
     SoftProjector w;
     w.setAppDataDir(QDir(database_dir));
     w.show();
